@@ -1,0 +1,67 @@
+
+*{
+    
+    @font-face {
+        font-family: "DIN Neuzeit Grotesk LT W01 BdCn";
+        src: url("https://db.onlinewebfonts.com/t/bb2e1211dfd31103079dbce7c49e1d4e.eot");
+        src: url("https://db.onlinewebfonts.com/t/bb2e1211dfd31103079dbce7c49e1d4e.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/bb2e1211dfd31103079dbce7c49e1d4e.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/bb2e1211dfd31103079dbce7c49e1d4e.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/bb2e1211dfd31103079dbce7c49e1d4e.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/bb2e1211dfd31103079dbce7c49e1d4e.svg#DIN Neuzeit Grotesk LT W01 BdCn")format("svg");
+    }
+}
+
+:root{
+    --color_0: #826f52;
+    --color_1: #a69376;
+    --color_2: #fff;
+    --color_3: 237,28,36;
+    --color_4: 0,136,203;
+    --color_5: 255,203,5;
+    --color_6: 114,114,114;
+    --color_7: 176,176,176;
+    --color_8: 255,255,255;
+    --color_9: 114,114,114;
+    --color_10: 176,176,176;
+    --color_11: 255,255,255;
+    --color_12: 216,209,198;
+    --color_13: 166,147,118;
+    --color_14: 130,111,82;
+    --color_15: 100,88,68;
+    --color_16: 201,248,248;
+    --color_17: 113,232,232;
+    --color_18: 55,221,221;
+    --color_19: 47,196,198;
+    --color_20: 26,115,115;
+    --color_21: 225,230,157;
+    --color_22: 199,205,107;
+    --color_23: 169,183,9;
+    --color_24: 113,120,6;
+    --color_25: 56,60,3;
+    --color_26: 218,179,212;
+    --color_27: 182,138,175;
+    --color_28: 145,93,138;
+    --color_29: 109,30,97;
+    --color_30: 54,15,48;
+    --color_31: 252,203,168;
+    --color_32: 249,177,124;
+    --color_33: 247,103,0;
+    --color_34: 164,68,0;
+    --color_35: 82,34,0;
+    --color_36: 255,255,255;
+    --color_37: 100,88,68;
+    --color_38: 216,209,198;
+    --color_39: 166,147,118;
+    --color_40: 130,111,82;
+    --color_41: 55,221,221;
+    --color_42: 100,88,68;
+    --color_43: 166,147,118;
+    --color_44: 255,255,255;
+    --color_45: 100,88,68;
+    --color_46: 100,88,68;
+    --color_47: 216,209,198;
+    --color_48: 55,221,221;
+    --color_49: 55,221,221;
+ }
+
