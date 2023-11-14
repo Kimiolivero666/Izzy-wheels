@@ -13,11 +13,11 @@
 }
 
 :root{
-    --color_0: #826f52;
-    --color_1: #a69376;
-    --color_2: #fff;
-    --color_3: 237,28,36;
-    --color_4: 0,136,203;
+    --marronOscuro: #826f52;
+    --marronClaro: #a69376;
+    --blanco: #fff;
+    --marronOscuro2: #645844;
+    --gris: #d8d1c6;
     --color_5: 255,203,5;
     --color_6: 114,114,114;
     --color_7: 176,176,176;

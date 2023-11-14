@@ -18,13 +18,17 @@
     border: none;
     font-weight: 600;
     font-size: 20px;
-    color: var(--color_0);
+    color: var(--marronOscuro);
     margin-left: 5px;
     margin-right: 5px;
 }
 
+.menu button:hover{
+    color: var(--marronClaro);
+}
+
 .barns{
-    color: var(--color_0);
+    color: var(--marronOscuro);
     font-size: 50px;
     margin-top: 35px;
     display: none;
@@ -53,7 +57,7 @@
         display: flex;
         flex-direction: column;
         transition: right 0.5s ease-in;
-        background-color: var(--color_2);
+        background-color: var(--blanco);
       }
       
       .menu.active {

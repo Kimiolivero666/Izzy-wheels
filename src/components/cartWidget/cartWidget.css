@@ -6,7 +6,7 @@
 }
 
 .bag{
-    color: var(--color_0);
+    color: var(--marronOscuro);
     font-size: 50px;
 }
 
@@ -14,6 +14,6 @@
     position: absolute;
     top: 53px;
     left: 20px;
-    color: var(--color_2);
+    color: var(--blanco);
     font-weight: 600;
 }
