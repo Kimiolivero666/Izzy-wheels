@@ -1,0 +1,20 @@
+.imagenes-home img{
+width: 100%;
+margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .imagenes-home img{
+        width: 80%;
+        }
+        
+}
+
+.rotating-image {
+    transition: transform 1s ease-in-out; /* Agrega una transición para que la rotación sea suave */
+  }
+  
+  .rotating-image:hover {
+    transform: rotate(360deg); /* Rota la imagen 360 grados cuando el mouse está sobre ella */
+  }
+    

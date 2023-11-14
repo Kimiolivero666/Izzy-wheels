@@ -62,8 +62,8 @@
 
 .encabezado-final p{
     color: var(--marronOscuro);
-    font-size: 15px;
-    line-height: 0.8;
+    font-size: 12px;
+    line-height: 0.5;
 }
 
 @media screen and (max-width: 600px){
