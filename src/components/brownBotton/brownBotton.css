@@ -1,0 +1,27 @@
+.btn-brown button{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: var(--blanco);
+    background: var(--marronClaro);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.btn-brown button:hover{
+    color: var(--blanco);
+    background: var(--marronOscuro);
+    transition: 0.75s;
+}
+
+
+@media screen and (max-width: 1210px){
+    .btn-brown button{
+        font-size: 15px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}

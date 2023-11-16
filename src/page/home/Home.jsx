@@ -9,6 +9,15 @@ import Encantowheelchair from '../../assets/home/Encanto-wheelchair.webp';
 import FindingNemo from '../../assets/home/Finding-Nemo-Izzy-Wheels.webp';
 import Mickey from '../../assets/home/38036e_0c0cfd18222e4d7191da1d3ddf24f93c~mv2.gif';
 import WhiteBotton from '../../components/whiteBotton/WhiteBotton';
+import izq from '../../assets/home/izq.jpg';
+import der from '../../assets/home/der.jpg';
+import DisneyxIzzy from '../../assets/home/Disney-x-Izzy---Web-Logo.webp';
+import { BrownBotton } from '../../components/brownBotton/BrownBotton';
+
+
+
+
+
 
 const Home = () => {
   return (
@@ -41,7 +50,30 @@ const Home = () => {
         <div className="text-center mb-5">
           <WhiteBotton titulo='show now' />
         </div>
-      </Container>
+</Container>
+<Container>
+<Row className='no-gutters'>
+  <Col xs={12} md={4} className='text-center section-banner '>
+    <img src={izq} alt="" />
+  </Col>
+  <Col xs={12} md={4} className='text-center section-banner-centro ' >
+    <img src={DisneyxIzzy} alt="" />
+    <p>IZZY WHEELS HAS JOINED FORCES</p>
+    <p>WITH DISNEY TO LAUNCH A MAGICAL</p>
+    <p>COLLECTION OF FASHIONABLE WHEEL</p>
+    <p>COVERS FOR WHEELCHAIRS INCLUDING</p>
+    <p>CHARACTERS FROM DISNEY, MARVEL &</p>
+    <p>STAR WARS!</p>
+    <div className="brown-btn">
+    <BrownBotton titulo='SHOP NOW'/>
+    </div>
+  </Col>
+  <Col xs={12} md={4} className='text-center section-banner d-none d-md-block'>
+    <img src={der} alt="" />
+  </Col>
+</Row>
+</Container>
+ 
     </div>
   );
 };
