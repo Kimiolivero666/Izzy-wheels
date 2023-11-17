@@ -1,0 +1,27 @@
+.Jumbotron2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title-jumbotron2{
+    position: absolute;
+    bottom: 200px;
+    text-transform: uppercase;
+    
+}
+.title-jumbotron2 h1{
+    color: var( --blanco);
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    background: var(--marronClaro);
+}
+
