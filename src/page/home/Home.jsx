@@ -57,10 +57,10 @@ const Home = () => {
       </Container>
       <Container>
         <Row className='no-gutters'>
-          <Col xs={12} md={4} className='text-center section-banner '>
+          <Col xs={12} md={6} lg={4} className='text-center section-banner '>
             <img src={izq} alt="" />
           </Col>
-          <Col xs={12} md={4} className='text-center section-banner-centro ' >
+          <Col xs={12} md={6} lg={4} className='text-center section-banner-centro ' >
             <img src={DisneyxIzzy} alt="" />
             <p>IZZY WHEELS HAS JOINED FORCES</p>
             <p>WITH DISNEY TO LAUNCH A MAGICAL</p>
@@ -74,7 +74,7 @@ const Home = () => {
               </div>
             </Zoom>
           </Col>
-          <Col xs={12} md={4} className='text-center section-banner d-none d-md-block'>
+          <Col xs={12} md={6} lg={4} className='text-center section-banner d-none d-lg-block'>
             <img src={der} alt="" />
           </Col>
         </Row>
@@ -84,10 +84,10 @@ const Home = () => {
 
       <Container>
         <Row className='no-gutters'>
-          <Col xs={12} md={4} className='text-center section-banner '>
+          <Col xs={12} md={6} lg={4} className='text-center section-banner d-none d-lg-block'>
             <img src={izquierda} alt="" />
           </Col>
-          <Col xs={12} md={4} className='text-center section-banner-centro-2 ' >
+          <Col xs={12} md={6} lg={4} className='text-center section-banner-centro-2 ' >
             <h3>WHO WE ARE</h3>
             <div>
               <p >Izzy Wheels was founded by the wonderfully colourful Irish sisters Ailbhe and Izzy. Izzy has been a wheelchair user all of her life. Ailbhe created a range of stylish wheel covers for her sister's chair so that she could express her personality. They now collaborate with artists and fashion designers all over the world to transform wheelchairs into fashion statements. </p>
@@ -98,7 +98,7 @@ const Home = () => {
               </div>
             </Zoom>
           </Col>
-          <Col xs={12} md={4} className='text-center section-banner d-none d-md-block'>
+          <Col xs={12} md={6} lg={4} className='text-center section-banner'>
             <img src={derecha} alt="" />
           </Col>
         </Row>
