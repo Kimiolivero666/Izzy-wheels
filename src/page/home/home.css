@@ -78,11 +78,11 @@
 
 @media screen and (max-width: 992px) {
 
-  
+
   .section-banner-centro p {
     font-size: 15px;
     line-height: 0.2;
-  
+
   }
 
   .section-banner-centro img {
@@ -90,6 +90,7 @@
     margin-bottom: 50px;
     width: 150px;
   }
+
   .brown-btn {
     padding-top: 50px;
   }
@@ -165,8 +166,8 @@
 }
 
 @media screen and (max-width: 1200px) {
-  
-  
+
+
   .section-banner-centro-2 h3 {
     font-size: 20px;
     margin-bottom: 20px;
@@ -179,9 +180,69 @@
 
 }
 
-@media screen and (max-width: 767px){
-  .section-banner-centro-2 h3{
+@media screen and (max-width: 767px) {
+  .section-banner-centro-2 h3 {
     margin-top: 80px;
   }
 }
+
+
+.logo-inicio-pie-de-pagina {
+  background: var(--gris);
+  border: solid 10px var(--blanco);
+  height: 75vh;
+}
+
+
+.logo-inicio-pie-de-pagina img {
+  width: 110px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.tech img{
+  width: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.logo-inicio-pie-de-pagina p{
+  font-size: 17px;
+    line-height: 1.6em;
+    text-align: center;
+    color: var(--marronText);
+    letter-spacing: 0em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.border-bottom{
+  background: var(--blanco);
+    height: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.tech.border-bottom{
+  background: var(--blanco);
+  height: 10px;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.contenedor-img{
+  height: 30vh;
+}
+
+
 

@@ -17,6 +17,11 @@ import { BrownBotton } from '../../components/brownBotton/BrownBotton';
 import derecha from '../../assets/home/derecha.jpg';
 import izquierda from '../../assets/home/izquierda.jpg';
 import Jumbotron2 from '../../components/jumbotron2/Jumbotron2';
+import vogue from '../../assets/home/vogue.webp';
+import elle from '../../assets/home/ELLE_Magazine_Logo_svg.webp';
+import gma from '../../assets/home/gma.png';
+import techcrunch from '../../assets/home/techcrunch.webp';
+
 
 
 
@@ -107,7 +112,54 @@ const Home = () => {
 
       <h2 className='text-center titulo-h2-inicio'>WE SHIP WORLDWIDE!</h2>
 
-      <Jumbotron2/>
+      <Jumbotron2 />
+      <Container>
+        <div className="my-3">
+          <Row>
+
+            <Col xs={12} md={6} lg={3} className='logo-inicio-pie-de-pagina text-center'>
+              <div className="contenedor-img">
+                <img src={vogue} alt="" />
+              </div>
+              <div>
+                <div className="border-bottom"></div>
+                <p>"Izzy Wheels is bridging the gap between fashion and disability, all while armed with creativity and an inclusive message that's hard not to be inspired by"</p>
+              </div>
+            </Col>
+            <Col xs={12} md={6} lg={3} className='logo-inicio-pie-de-pagina text-center'>
+              <div className="contenedor-img">
+                <img src={elle} alt="" />
+              </div>
+              <div>
+                <div className="border-bottom"></div>
+                <p>"Sisters Ailbhe and Izzy are your ultimate inspiration"</p>
+              </div>
+            </Col>
+            <Col xs={12} md={6} lg={3} className='logo-inicio-pie-de-pagina text-center'>
+              <div className="contenedor-img">
+                <img src={gma} alt="" />
+              </div>
+              <div>
+                <div className="border-bottom"></div>
+                <p>"Izzy Wheels turns function to high fashion with wheelchair wheel covers."</p>
+              </div>
+            </Col>
+            <Col xs={12} md={6} lg={3} className='logo-inicio-pie-de-pagina text-center'>
+              <div className="tech">
+                <div className="contenedor-img">
+                  <img src={techcrunch} alt="" />
+                </div>
+                <div>
+                  <div className="border-bottom"></div>
+                  <p>"The notion that a wheelchair could be a “fashion choice” is a refreshing attack on conventional thinking"</p>
+                </div>
+              </div>
+            </Col>
+
+          </Row>
+        </div>
+
+      </Container>
 
     </div>
   );
