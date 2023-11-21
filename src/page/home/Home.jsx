@@ -28,6 +28,7 @@ import techcrunch from '../../assets/home/techcrunch.webp';
 
 
 
+
 const Home = () => {
   return (
     <div className='Home'>
@@ -114,7 +115,7 @@ const Home = () => {
 
       <Jumbotron2 />
       <Container>
-        <div className="my-3">
+        <div className="my-3 pb-5">
           <Row>
 
             <Col xs={12} md={6} lg={3} className='logo-inicio-pie-de-pagina text-center'>
@@ -158,6 +159,7 @@ const Home = () => {
 
           </Row>
         </div>
+
 
       </Container>
 
