@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import Item from './Item'
+import './itemList.css'
 
 const ItemList = ({ product }) => {
     return (

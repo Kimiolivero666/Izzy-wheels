@@ -1,0 +1,60 @@
+
+
+
+.box-card {
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 18rem;
+    height: 55vh;
+
+    
+}
+
+
+.box-card:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.item-card{
+    position: relative;
+}
+
+.item-img img{
+    width: 272px;
+}
+
+.card-title h3{
+    color: var(--marronOscuro);
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.card-price h4{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.button{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.button button {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    background: var(--celeste);
+    color: var(--blanco);
+    width: 18rem;
+    border: none;
+}
+
+.box-card:hover .button button {
+    visibility: visible; 
+    opacity: 1; 
+}
+
