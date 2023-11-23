@@ -23,6 +23,8 @@ import gma from '../../assets/home/gma.png';
 import techcrunch from '../../assets/home/techcrunch.webp';
 import ItemListContainer from '../../components/item/ItemListContainer'
 
+import ItemDetailContainer from '../../components/ItemDetail/ItemDetailContainer';
+
 
 
 
@@ -160,9 +162,11 @@ const Home = () => {
 
           </Row>
         </div>
-        
 
- <ItemListContainer/>
+
+        <ItemListContainer />
+
+        <ItemDetailContainer />
       </Container>
 
     </div>

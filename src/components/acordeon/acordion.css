@@ -1,0 +1,18 @@
+.accordion {
+    border: solid 1px var(--marronClaro);
+}
+
+.accordion-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.accordion-content ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 300;
+}

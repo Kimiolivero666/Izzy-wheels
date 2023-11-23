@@ -1,0 +1,65 @@
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 80px;
+    border: solid 1px var(--marronClaro);
+}
+
+.quantity p{
+    
+    margin-top: 5px;
+    margin-left: 30px;
+    font-weight: 300;
+    color: var(--negro);
+}
+
+.title-itemCount h3{
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--negro);
+}
+
+.botton-inc-dec{
+    display: flex;
+    flex-direction: column;
+
+}
+.botton-inc-dec button{
+font-size: 12px;
+border: none;
+background: transparent;
+}
+
+.quantity:hover .botton-inc-dec button {
+    opacity: 1;
+  }
+  
+
+  .botton-inc-dec button {
+    font-size: 12px;
+    border: none;
+    background: transparent;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .btn-onAdd{
+    margin-top: 30px;
+  }
+
+  .btn-onAdd button{
+    width: 100%;
+    border: none;
+    color: var(--blanco);
+    background: var(--celeste);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+  }
+  .btn-onAdd button:hover{
+    background: var(--celesteHover);
+    transition: 0.5s;
+  }

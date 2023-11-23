@@ -4,9 +4,9 @@ import './ItemCount.css'
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
-const ItemCount = ({ init, stock, onAdd }) => {
+const ItemCount = ({ initial, stock, onAdd }) => {
 
-    const [quantity, setQuantity] = useState(init);
+    const [quantity, setQuantity] = useState(initial);
 
     const increment = () => {
         if (quantity < stock) {

@@ -1,0 +1,50 @@
+.ItemDetail-left img {
+    width: 500px;
+}
+
+.ItemDetail-right h3 {
+    color: var(--marronOscuro);
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.ItemDetail-right p {
+    color: var(--marronOscuro);
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.ItemDetail-right .box h6 {
+    font-weight: 300;
+    color: var(--marronOscuro);
+}
+
+
+.form-input textarea{
+    width: 100%;
+    border: solid 1px var(--marronClaro);
+}
+
+.form-input textarea::placeholder {
+    font-weight: 300; 
+  }
+
+  .box-text h5{
+    font-weight: 300;
+    color: var(--marronOscuro);
+  }
+
+  .box-text p{
+    font-weight: 300;
+    color: var(--marronOscuro);
+  }
+
+  
+
+  @media screen and (max-width: 525px)
+{
+    .ItemDetail-left img {
+        width: 300px;
+    }
+}
+
