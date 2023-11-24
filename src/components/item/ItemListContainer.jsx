@@ -1,23 +1,29 @@
-import { useState } from "react"
-import { getProduct } from "../ListProduct"
-import { useEffect } from "react"
-import ItemList from './ItemList'
+import { useState, useEffect } from "react"
+import { getProduct, getProductByCategory } from "../ListProduct"
+
+import { useParams } from "react-router-dom"
 
 const ItemListContainer = () => {
     const [product, setProduct] = useState([])
+    const { categoryId } = useParams() 
 
     useEffect(() => {
-        getProduct()
+        const asyncFunc = categoryId ? getProductByCategory : getProduct
+
+        asyncFunc(categoryId) 
             .then((resp) => {
                 setProduct(resp)
             })
+            .catch((error) => {
+                
+                console.error("Error fetching data:", error)
+            })
 
-
-    }, [])
+    }, [categoryId])
 
     return (
         <div className="ItemListContainer">
-            <ItemList product={product} />
+            <ItemListContainer product={product} />
         </div>
     )
 }

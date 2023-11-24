@@ -1,7 +1,18 @@
 /* eslint-disable react/prop-types */
+import { Link } from 'react-router-dom'
 import './item.css'
 
-const Item = ({ title, price, img }) => {
+const Item = ({id, title, price, img }) => {
+
+    
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  };
+
+
     return (
         <div className='Item'>
             <div className="box-card">
@@ -16,7 +27,7 @@ const Item = ({ title, price, img }) => {
                         <h4>€ {price}</h4>
                     </div>
                     <div className="button">
-                        <button>Quick View</button>
+                     <Link to={`/item/${id}`} onClick={scrollToTop}><button>Quick View</button></Link>
                     </div>
                 </div>
             </div>

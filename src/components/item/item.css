@@ -1,6 +1,3 @@
-
-
-
 .box-card {
     overflow: hidden;
     margin-bottom: 20px;
@@ -8,8 +5,9 @@
     border-radius: 5px;
     width: 18rem;
     height: 55vh;
+    margin: 10px;
+    padding-top: 40px;
 
-    
 }
 
 
@@ -18,29 +16,29 @@
     transition: 0.8s;
 }
 
-.item-card{
+.item-card {
     position: relative;
 }
 
-.item-img img{
+.item-img img {
     width: 272px;
 }
 
-.card-title h3{
+.card-title h3 {
     color: var(--marronOscuro);
     font-size: 16px;
     margin-top: 30px;
 }
 
-.card-price h4{
+.card-price h4 {
     font-size: 16px;
     font-weight: 100;
 }
 
-.button{
+.button {
     position: absolute;
     bottom: 0;
-    
+
 }
 
 .button button {
@@ -54,7 +52,6 @@
 }
 
 .box-card:hover .button button {
-    visibility: visible; 
-    opacity: 1; 
+    visibility: visible;
+    opacity: 1;
 }
-

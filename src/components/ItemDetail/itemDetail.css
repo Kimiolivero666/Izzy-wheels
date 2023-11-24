@@ -1,4 +1,12 @@
+
+
+.ItemDetail{
+    margin-top: 200px;
+}
+
+
 .ItemDetail-left img {
+    margin-top: 50px;
     width: 500px;
 }
 
@@ -29,6 +37,11 @@
     font-weight: 300; 
   }
 
+
+  .box-text{
+    margin-left: 20%;
+  }
+
   .box-text h5{
     font-weight: 300;
     color: var(--marronOscuro);
@@ -41,10 +54,13 @@
 
   
 
-  @media screen and (max-width: 525px)
+  @media screen and (max-width: 992px)
 {
     .ItemDetail-left img {
         width: 300px;
+    }
+    .box-text{
+        margin-left: 0;
     }
 }
 

@@ -21,9 +21,6 @@ import vogue from '../../assets/home/vogue.webp';
 import elle from '../../assets/home/ELLE_Magazine_Logo_svg.webp';
 import gma from '../../assets/home/gma.png';
 import techcrunch from '../../assets/home/techcrunch.webp';
-import ItemListContainer from '../../components/item/ItemListContainer'
-
-import ItemDetailContainer from '../../components/ItemDetail/ItemDetailContainer';
 
 
 
@@ -163,10 +160,6 @@ const Home = () => {
           </Row>
         </div>
 
-
-        <ItemListContainer />
-
-        <ItemDetailContainer />
       </Container>
 
     </div>

@@ -1,7 +1,15 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Layout from './components/Layout'
 import Home from './page/home/Home'
+import ItemListContainer from './components/item/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer'
+import Disney from './page/disney/Disney'
+import Store from './page/store/Store'
+import Marvel from './page/marvel/Marvel'
+import StarWars from './page/StarWars/StarWars'
+
 
 
 // import ItemCount from './components/itemCount/ItemCount'
@@ -14,11 +22,21 @@ function App() {
 
   return (
     <>
-      
-      <Layout>
-      {/* <ItemCount init={1} stock={10} onAdd={(quantity) => console.log('cantidad agregada', quantity)}/> */}
-      <Home />
-      </Layout>
+
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path='/' element={<Home />} />
+           <Route path='/store' element={<Store/>} /> 
+            <Route path='/disney' element={<Disney />} />
+            <Route path='/marvel' element={<Marvel/>} />
+            <Route path='/starWars' element={<StarWars/>} />
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
+            <Route path='*' element={<h1>404 NOT FOUND</h1>} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </>
   )
 }

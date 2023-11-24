@@ -42,6 +42,7 @@ const Products = [
         price: 149.00,
         img: disney1,
         stock:9,
+        category:'disney',
     },
     {
         id: '2',
@@ -49,6 +50,7 @@ const Products = [
         price: 149.00,
         img: disney2,
         stock:11,
+        category:'disney',
     },
     {
         id: '3',
@@ -56,6 +58,7 @@ const Products = [
         price: 149.00,
         img: disney3,
         stock:1,
+        category:'disney',
     },
     {
         id: '4',
@@ -63,6 +66,7 @@ const Products = [
         price: 149.00,
         img: disney4,
         stock: 12,
+        category:'disney',
     },
     {
         id: '5',
@@ -70,6 +74,7 @@ const Products = [
         price: 149.00,
         img: disney5,
         stock:9,
+        category:'disney',
     },
     {
         id: '6',
@@ -77,6 +82,7 @@ const Products = [
         price: 149.00,
         img: disney6,
         stock:8,
+        category:'disney',
     },
     {
         id: '7',
@@ -84,6 +90,7 @@ const Products = [
         price: 149.00,
         img: disney7,
         stock: 11,
+        category:'disney',
     },
     {
         id: '8',
@@ -91,6 +98,7 @@ const Products = [
         price: 149.00,
         img: disney8,
         stock:7,
+        category:'disney',
     },
     {
         id: '9',
@@ -98,6 +106,7 @@ const Products = [
         price: 149.00,
         img: disney9,
         stock:7,
+        category:'disney',
     },
     {
         id: '10',
@@ -105,6 +114,7 @@ const Products = [
         price: 149.00,
         img: marvel1,
         stock: 5,
+        category:'marvel',
     },
     {
         id: '11',
@@ -112,6 +122,7 @@ const Products = [
         price: 149.00,
         img: marvel2,
         stock: 8,
+        category:'marvel',
     },
     {
         id: '12',
@@ -119,6 +130,7 @@ const Products = [
         price: 149.00,
         img: marvel3,
         stock:14,
+        category:'marvel',
     },
     {
         id: '13',
@@ -126,6 +138,7 @@ const Products = [
         price: 149.00,
         img: marvel4,
         stock:6,
+        category:'marvel',
     },
     {
         id: '14',
@@ -133,6 +146,7 @@ const Products = [
         price: 149.00,
         img: marvel5,
         stock:3,
+        category:'marvel',
     },
     {
         id: '15',
@@ -140,6 +154,7 @@ const Products = [
         price: 149.00,
         img: marvel6,
         stock:7,
+        category:'marvel',
     },
     {
         id: '16',
@@ -147,6 +162,7 @@ const Products = [
         price: 149.00,
         img: marvel7,
         stock:10,
+        category:'marvel',
     },
     {
         id: '17',
@@ -154,6 +170,7 @@ const Products = [
         price: 149.00,
         img: marvel8,
         stock:4,
+        category:'marvel',
     },
     {
         id: '18',
@@ -161,6 +178,7 @@ const Products = [
         price: 149.00,
         img: marvel9,
         stock:3,
+        category:'marvel',
     },
     {
         id: '19',
@@ -168,6 +186,7 @@ const Products = [
         price: 149.00,
         img: star1,
         stock:5,
+        category:'starWars',
     },
     {
         id: '20',
@@ -175,6 +194,7 @@ const Products = [
         price: 149.00,
         img: star2,
         stock:8,
+        category:'starWars',
     },
     {
         id: '21',
@@ -182,6 +202,7 @@ const Products = [
         price: 149.00,
         img: star3,
         stock:15,
+        category:'starWars',
     },
     {
         id: '22',
@@ -189,6 +210,7 @@ const Products = [
         price: 149.00,
         img: star4,
         stock:12,
+        category:'starWars',
     },
     {
         id: '23',
@@ -196,6 +218,7 @@ const Products = [
         price: 149.00,
         img: star5,
         stock:9,
+        category:'starWars',
     },
     {
         id: '24',
@@ -203,6 +226,7 @@ const Products = [
         price: 149.00,
         img: star6,
         stock:16,
+        category:'starWars',
     },
     {
         id: '25',
@@ -210,6 +234,7 @@ const Products = [
         price: 149.00,
         img: star7,
         stock:4,
+        category:'starWars',
     },
     {
         id: '26',
@@ -217,6 +242,7 @@ const Products = [
         price: 149.00,
         img: star8,
         stock: 6,
+        category:'starWars',
     },
     {
         id: '27',
@@ -224,6 +250,7 @@ const Products = [
         price: 149.00,
         img: star9,
         stock:3,
+        category:'starWars',
     },
 
 ]
@@ -242,5 +269,13 @@ export const getProductById = (productId) => {
         setTimeout(() =>{
             resolve( Products.find(prod => prod.id === productId))
         },500)
+    })
+}
+
+export const getProductByCategory = (productCategory) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(Products.filter(prod => prod.category === productCategory))
+        }, 500)
     })
 }
