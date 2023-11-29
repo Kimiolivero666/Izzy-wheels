@@ -20,6 +20,10 @@ const ItemCount = ({ initial, stock, onAdd }) => {
         }
     }
 
+    const handleAddToCart = () => {
+        onAdd(quantity)
+    }
+
 
     return (
         <div className='ItemCount'>
@@ -34,7 +38,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
                 </div>
             </div>
             <div className="btn-onAdd">
-                <button onClick={() => onAdd(quantity)} disabled={!stock}>ADD TO CART</button>
+                <button onClick={handleAddToCart} disabled={!stock}>ADD TO CART</button>
             </div>
         </div>
     )

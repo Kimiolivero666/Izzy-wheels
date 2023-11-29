@@ -29,6 +29,7 @@ import techcrunch from '../../assets/home/techcrunch.webp';
 
 
 
+
 const Home = () => {
   return (
     <div className='Home'>
@@ -159,6 +160,7 @@ const Home = () => {
 
           </Row>
         </div>
+
 
       </Container>
 

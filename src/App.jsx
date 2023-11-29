@@ -6,9 +6,10 @@ import Home from './page/home/Home'
 import ItemListContainer from './components/item/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer'
 import Disney from './page/disney/Disney'
-import Store from './page/store/Store'
 import Marvel from './page/marvel/Marvel'
 import StarWars from './page/StarWars/StarWars'
+import Store from './page/store/Store'
+
 
 
 
@@ -27,12 +28,12 @@ function App() {
         <Layout>
           <Routes>
             <Route path='/' element={<Home />} />
-           <Route path='/store' element={<Store/>} /> 
+            <Route path='/Store' element={<Store/>} />
             <Route path='/disney' element={<Disney />} />
-            <Route path='/marvel' element={<Marvel/>} />
-            <Route path='/starWars' element={<StarWars/>} />
+            <Route path='/marvel' element={<Marvel />} />
+            <Route path='/starWars' element={<StarWars />} />
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
+            <Route path='/item/:itemId' element={<ItemDetailContainer />} />
             <Route path='*' element={<h1>404 NOT FOUND</h1>} />
           </Routes>
         </Layout>

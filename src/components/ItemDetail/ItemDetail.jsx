@@ -4,16 +4,25 @@ import './itemDetail.css'
 import ItemCount from '../itemCount/ItemCount'
 import Acordion from '../acordeon/Acordion'
 
-const ItemDetail = ({ img, title, price, stock }) => {
+
+const ItemDetail = ({ img, title, price, stock, }) => {
+
+    const onAdd =(quantity) =>{
+        console.log({ title, quantity})
+    }
+
+    
+
+
     return (
         <div className="ItemDetail">
             <Container>
                 <Row>
                     
                     <Col md={7} className='ItemDetail-left text-center'>
-                        <img className="  img-detalle-producto" src={img} alt="" />
+                        <img className=" img-detalle-producto" src={img} alt="" />
                     </Col>
-                    <Col md={5} className='ItemDetail-right'>
+                    <Col md={4} className='ItemDetail-right'>
 
                         <div className='box'>
                             <h3><strong>{title}</strong></h3>
@@ -25,11 +34,12 @@ const ItemDetail = ({ img, title, price, stock }) => {
                                 <textarea name="message"  cols="38" rows="5" placeholder="Message" required></textarea>
                             </div>
                             <div className="mb-5">
-                            <ItemCount  initial={1} stock={stock} onAdd={(quantity) => console.log('cantidad agregada', quantity)} />
+                            <ItemCount  initial={1} stock={stock} onAdd={onAdd} />
                             </div>
                         </div>
 
                     </Col>
+                    <Col lg={1}></Col>
                 </Row>
                 <Row>
                     <Col md={5}>

@@ -24,6 +24,24 @@
     width: 272px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .item-img img {
+      width: 150px;
+    }
+
+    .box-card{
+        width: 10rem;
+        height: 43vh;
+    }
+
+    .box-card:hover .button button {
+        visibility: visible;
+        opacity: 1;
+        width: 10rem;
+    }
+}
+
 .card-title h3 {
     color: var(--marronOscuro);
     font-size: 16px;

@@ -5,7 +5,9 @@ import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null);
+
     const { itemId } = useParams(); 
+    
 
     useEffect(() => {
         getProductById(itemId)
@@ -17,6 +19,7 @@ const ItemDetailContainer = () => {
                 console.error("Error fetching data:", error);
             });
     }, [itemId]);
+
 
     return (
         <div className="ItemDetailContainer">

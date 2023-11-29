@@ -1,0 +1,21 @@
+.title-store{
+    margin-top: 200px;
+}
+
+.title-store h1{
+    color: var(--marronOscuro);
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.title-store p{
+    color: var(--grisOscuro);
+    font-weight: 100;
+    font-size: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+  
