@@ -6,6 +6,7 @@ import CartWidget from '../cartWidget/CartWidget';
 import { HiBars3 } from 'react-icons/hi2';
 import { IoCloseSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,26 @@ const Navbar = () => {
       top: 0,
       behavior: 'smooth' 
     });
+    closeMenu();
   };
+
+  const closeMenu = () => {
+    setMenuOpen(false); // Cierra el menú
+  };
+
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden'; // Deshabilita el scroll cuando el menú está abierto
+    } else {
+      document.body.style.overflow = 'auto'; // Habilita el scroll cuando el menú está cerrado
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto'; // Asegura que el scroll esté habilitado al desmontar el componente
+    };
+  }, [menuOpen]);
+
 
 
   return (
@@ -32,6 +52,7 @@ const Navbar = () => {
 
           <div className={`menu m-auto ${menuOpen ? 'active' : ''}`}>
 
+
             <Link to={'/'} onClick={scrollToTop} className='link-menu'>HOME</Link>
             <Link to={'/store'} onClick={scrollToTop} className='link-menu'>STORE</Link>
             <Link to={'/disney'} onClick={scrollToTop} className='link-menu'>DISNEY</Link>
@@ -40,7 +61,7 @@ const Navbar = () => {
             <Link to={'/'} className='link-menu'>PUBLIC SPEAKING</Link>
             <Link to={'/'} className='link-menu'>JOBS</Link>
             <Link to={'/'} className='link-menu'>DONATE</Link>
-            
+              
           </div>
 
           <CartWidget />
