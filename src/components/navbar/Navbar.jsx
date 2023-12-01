@@ -11,6 +11,8 @@ import { useEffect } from 'react';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -52,16 +54,16 @@ const Navbar = () => {
 
           <div className={`menu m-auto ${menuOpen ? 'active' : ''}`}>
 
-
+<div className=" menu-box">
             <Link to={'/'} onClick={scrollToTop} className='link-menu'>HOME</Link>
             <Link to={'/store'} onClick={scrollToTop} className='link-menu'>STORE</Link>
             <Link to={'/disney'} onClick={scrollToTop} className='link-menu'>DISNEY</Link>
             <Link to={'/marvel'} onClick={scrollToTop} className='link-menu'>MARVEL</Link>
             <Link to={'/starWars'} onClick={scrollToTop} className='link-menu'>STAR WARS</Link>
-            <Link to={'/'} className='link-menu'>PUBLIC SPEAKING</Link>
+            <Link to={'/'} className='link-menu'>OUR STORY</Link>
             <Link to={'/'} className='link-menu'>JOBS</Link>
             <Link to={'/'} className='link-menu'>DONATE</Link>
-              
+            </div>           
           </div>
 
           <CartWidget />

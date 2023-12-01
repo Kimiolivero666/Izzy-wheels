@@ -9,6 +9,7 @@ import Disney from './page/disney/Disney'
 import Marvel from './page/marvel/Marvel'
 import StarWars from './page/StarWars/StarWars'
 import Store from './page/store/Store'
+import Cart from './components/cart/Cart'
 
 
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='/starWars' element={<StarWars />} />
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart />} />
             <Route path='*' element={<h1>404 NOT FOUND</h1>} />
           </Routes>
         </Layout>

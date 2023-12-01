@@ -1,33 +1,33 @@
-.Navbar{
+.Navbar {
     background-color: rgba(255, 255, 255, 0.767);
 }
 
-.navbar-contenedor{
+.navbar-contenedor {
     display: flex;
     justify-content: space-between;
 }
 
-.navbar-img img{
+.navbar-img img {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 80px;
 }
 
 
-.link-menu{
-text-decoration: none;
-color: var(--marronOscuro);
-font-size: 20px;
-font-weight: 500;
-margin-left: 8px;
-margin-right: 8px;
+.link-menu {
+    text-decoration: none;
+    color: var(--marronOscuro);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
-.menu button:hover{
+.link-menu:hover {
     color: var(--marronClaro);
 }
 
-.barns{
+.barns {
     color: var(--marronOscuro);
     font-size: 50px;
     margin-top: 35px;
@@ -36,47 +36,56 @@ margin-right: 8px;
 
 
 
-@media screen and (max-width: 1200px){
-    .menu button{
+@media screen and (max-width: 1200px) {
+    .menu button {
         font-size: 15px;
         margin-top: 35px;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .barns{
+    .barns {
         display: block;
     }
 
-    .menu {
-        width: 80%;
+    .menu-box {
         height: 100vh;
+        width: 80%;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        background: var(--blanco);
+    }
+
+    .menu {
+
+        width: 100%;
         position: absolute;
         top: 118px;
         right: -100%;
-        display: flex;
-        flex-direction: column;
-        transition: right 0.5s ease-in;
-        background-color: var(--blanco);
-      }
-      
-      .menu.active {
+        transition: right 0.4s ease-in;
+        background-color: rgba(98, 98, 98, 0.5);
+    }
+
+    .menu.active {
         right: 0;
-      }
-      
-      
-      .Navbar.menu-open .menu {
+    }
+
+
+    .Navbar.menu-open .menu {
         right: 0;
-      }
-   
-      .link-menu{
+    }
+
+    .link-menu {
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: 30px;
         padding-top: 10px;
         padding-bottom: 10px;
-      }
-   
-}
-    
+    }
 
+    .link-menu:hover{
+        color: var(--celeste);
+    }
+
+}

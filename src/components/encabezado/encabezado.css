@@ -29,6 +29,7 @@
     color: var(--blanco);
     line-height: 1.2;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .box-encabezado-der-p {

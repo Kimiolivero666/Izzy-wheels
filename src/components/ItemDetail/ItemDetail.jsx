@@ -3,22 +3,39 @@ import { Col, Container, Row } from 'react-bootstrap'
 import './itemDetail.css'
 import ItemCount from '../itemCount/ItemCount'
 import Acordion from '../acordeon/Acordion'
+import { useState } from 'react'
 
 
-const ItemDetail = ({ img, title, price, stock, }) => {
 
-    const onAdd =(quantity) =>{
-        console.log({ title, quantity})
-    }
+const ItemDetail = ({ img, title, price, stock }) => {
+    const [diameter, setDiameter] = useState('');
+    const [message, setMessage] = useState('');
+  
+    const handleDiameterChange = (selectedDiameter) => {
+      setDiameter(selectedDiameter);
+    };
+  
+    const handleMessageChange = (event) => {
+      setMessage(event.target.value);
+    };
+  
+    const onAdd = (quantity) => {
+      if (diameter && message) {
+        console.log({ title, quantity, diameter, message });
+        // Aquí puedes redirigir al usuario al carrito si el diámetro y el mensaje están presentes
+      } else {
+        window.alert('Por favor, completa el diámetro y el mensaje antes de agregar al carrito.');
+      }
+    };
+  
 
-    
 
 
     return (
         <div className="ItemDetail">
             <Container>
                 <Row>
-                    
+
                     <Col md={7} className='ItemDetail-left text-center'>
                         <img className=" img-detalle-producto" src={img} alt="" />
                     </Col>
@@ -28,13 +45,13 @@ const ItemDetail = ({ img, title, price, stock, }) => {
                             <h3><strong>{title}</strong></h3>
                             <p >€ {price}</p>
                             <h6>Size (Diameter)</h6>
-                            <Acordion />
+                            <Acordion handleDiameterChange={handleDiameterChange}/>
                             <h6 className='mt-3'>Who are the wheel covers for? (Their name so we can write them a little note)</h6>
                             <div className="form-input">
-                                <textarea name="message"  cols="38" rows="5" placeholder="Message" required></textarea>
+                                <textarea name="message" cols="38" rows="5" placeholder="Message" onChange={handleMessageChange}></textarea>
                             </div>
                             <div className="mb-5">
-                            <ItemCount  initial={1} stock={stock} onAdd={onAdd} />
+                                <ItemCount initial={1} stock={stock} onAdd={onAdd} />
                             </div>
                         </div>
 
