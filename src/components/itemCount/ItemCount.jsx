@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react'
-import './ItemCount.css'
+import './itemCount.css'
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
