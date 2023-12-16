@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Col, Container, Row } from 'react-bootstrap'
-import './Footer.css'
+import './footer.css'
 import { BiLogoFacebook } from 'react-icons/bi';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
