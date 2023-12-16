@@ -21,6 +21,10 @@
   /* Rota la imagen 360 grados cuando el mouse está sobre ella */
 }
 
+.section{
+  width: 99%;
+}
+
 .section-banner img {
   width: 100%;
   background-size: cover;

@@ -5,7 +5,7 @@ import ItemList from "../../components/item/ItemList";
 import './starwars.css'
 import Encabezado from "../../components/encabezado/Encabezado";
 import logoIzzy from '../../assets/logo-footer.png'
-import sectionStarWars from '../../assets/encabezado/sectionStarWars.webp.JPG'
+import sectionStarWars from '../../assets/encabezado/sectionStarWars.webp.jpg'
 
 
 const StarWars = () => {

@@ -62,7 +62,7 @@ const Home = () => {
           <WhiteBotton titulo='show now' />
         </div>
       </Container>
-      <Container>
+      <section className="section">
         <Row className='no-gutters'>
           <Col xs={12} md={6} lg={4} className='text-center section-banner '>
             <img src={izq} alt="" />
@@ -85,11 +85,11 @@ const Home = () => {
             <img src={der} alt="" />
           </Col>
         </Row>
-
-      </Container>
+        </section>
+      
       <h2 className='text-center titulo-h2-inicio'>WE SHIP WORLDWIDE!</h2>
 
-      <Container>
+      <section className='section'>
         <Row className='no-gutters'>
           <Col xs={12} md={6} lg={4} className='text-center section-banner d-none d-lg-block'>
             <img src={izquierda} alt="" />
@@ -110,7 +110,7 @@ const Home = () => {
           </Col>
         </Row>
 
-      </Container>
+      </section>
 
       <h2 className='text-center titulo-h2-inicio'>WE SHIP WORLDWIDE!</h2>
 
