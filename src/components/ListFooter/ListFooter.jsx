@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import './ListFooter.css'
+import './listFooter.css'
 
 const ListFooter = (props) => {
     return (
