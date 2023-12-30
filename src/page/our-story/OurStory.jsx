@@ -48,12 +48,12 @@ const OurStory = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={4} className="childhood-2">
+                        <Col sm={6} lg={4} className="childhood-2">
                             <div>
                                 <img src={i38036e} alt="" />
                             </div>
                         </Col>
-                        <Col lg={4} className="childhood-3 bg-danger">
+                        <Col sm={6} lg={4}className="childhood-3 bg-danger">
                             <div>
                                 <img src={i38036ed} alt="" />
                             </div>
@@ -62,12 +62,12 @@ const OurStory = () => {
                 </div>
                 <div className="childhood">
                     <Row className='no-gutters'>
-                        <Col lg={4} className="childhood-2">
+                        <Col sm={6} lg={4} className="childhood-2">
                             <div>
                                 <img src={c2d6} alt="" />
                             </div>
                         </Col>
-                        <Col lg={4} className="childhood-3 bg-danger">
+                        <Col sm={6} lg={4} className="childhood-3 bg-danger">
                             <div>
                                 <img src={Oc5b} alt="" />
                             </div>
@@ -120,12 +120,12 @@ const OurStory = () => {
 
                 <div className="childhood">
                     <Row className='no-gutters'>
-                        <Col lg={4} className="childhood-2">
+                        <Col sm={6} lg={4} className="childhood-2">
                             <div>
                                 <img src={acfcfab} alt="" />
                             </div>
                         </Col>
-                        <Col lg={4} className="childhood-1">
+                        <Col sm={6} lg={4} className="childhood-1">
                             <div className="childhood-1-box">
                                 <h3 className="mt-5 mt-lg-0">COLLABORATIONS</h3>
                                 <div className="box-p mb-5">
@@ -166,12 +166,12 @@ const OurStory = () => {
 
                 <div className="childhood">
                     <Row className='no-gutters'>
-                        <Col lg={4} className="childhood-2">
+                        <Col sm={6} lg={4} className="childhood-2">
                             <div>
                                 <img src={cf8} alt="" />
                             </div>
                         </Col>
-                        <Col lg={4} className="childhood-3 bg-danger">
+                        <Col sm={6} lg={4} className="childhood-3 bg-danger">
                             <div>
                                 <img src={c1be} alt="" />
                             </div>
