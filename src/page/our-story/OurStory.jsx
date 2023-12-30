@@ -190,7 +190,7 @@ const OurStory = () => {
 
                 <div className="my-3 mt-5">
                     <Row>
-                        <Col xs={12} md={6} lg={3} className='section-fin text-center'>
+                        <Col xs={12} md={6} lg={3} className='section-fin-img text-center'>
                             <img src={f16} alt="" />
                         </Col>
                         <Col xs={12} md={6} lg={3} className='section-fin text-center'>
@@ -203,7 +203,7 @@ const OurStory = () => {
                                 <p>Ailbhe works closely with the artists and brands to create the wheel covers for Izzy Wheels. She is passionate about combining art with business, bridging the gap between disability and fashion, and collaborating with exceptional people in order to foster a more inclusive and diverse world.</p>
                             </div>
                         </Col>
-                        <Col xs={12} md={6} lg={3} className='section-fin text-center'>
+                        <Col xs={12} md={6} lg={3} className='section-fin-img text-center'>
                             <img src={f214} alt="" />
                         </Col>
                         <Col xs={12} md={6} lg={3} className='section-fin text-center'>
