@@ -22,31 +22,37 @@
 }
 
 .section{
-  width: 99%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-banner img {
   width: 100%;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 .section-banner-centro {
   background: var(--marronOscuro);
+  text-align: center;
+  
 }
 
 .section-banner-centro p {
   color: var(--blanco);
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 0.8;
 }
 
 .section-banner-centro img {
   width: 200px;
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .brown-btn {

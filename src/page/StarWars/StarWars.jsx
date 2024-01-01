@@ -6,6 +6,7 @@ import './starwars.css'
 import Encabezado from "../../components/encabezado/Encabezado";
 import logoIzzy from '../../assets/logo-footer.png'
 import sectionStarWars from '../../assets/encabezado/sectionStarWars.webp.jpg'
+import { Container } from "react-bootstrap";
 
 
 const StarWars = () => {
@@ -23,10 +24,12 @@ const StarWars = () => {
 
     return (
         <div className="StarWars">
+            <Container>
             <div className="encabezado-starWars">
                 <Encabezado imgppal={sectionStarWars}img2={logoIzzy} text="Izzy Wheels are proud to have an incredible community of
 Spokes People from all over the world.  Each person's wheel covers express their personality and individuality."/>
             </div>
+            </Container>
             <div className="my-5">
                 <ItemList product={starWarsProducts} />
             </div>

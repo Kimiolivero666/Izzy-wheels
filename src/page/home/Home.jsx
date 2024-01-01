@@ -33,7 +33,7 @@ import techcrunch from '../../assets/home/techcrunch.webp';
 const Home = () => {
   return (
     <div className='Home'>
-      <Jumbotroom />
+      <Jumbotroom/>
       <Container>
         <Row className='mt-5 imagenes-home text-center py-5'>
           <Col lg={2}></Col>
@@ -62,8 +62,9 @@ const Home = () => {
           <WhiteBotton titulo='show now' />
         </div>
       </Container>
+<Container>
       <section className="section">
-        <Row className='no-gutters'>
+        <Row className='no-gutters justify-content-center'>
           <Col xs={12} md={6} lg={4} className='text-center section-banner '>
             <img src={izq} alt="" />
           </Col>
@@ -86,8 +87,12 @@ const Home = () => {
           </Col>
         </Row>
         </section>
+
+        </Container>
       
       <h2 className='text-center titulo-h2-inicio'>WE SHIP WORLDWIDE!</h2>
+
+      <Container>
 
       <section className='section'>
         <Row className='no-gutters'>
@@ -111,6 +116,8 @@ const Home = () => {
         </Row>
 
       </section>
+
+      </Container>
 
       <h2 className='text-center titulo-h2-inicio'>WE SHIP WORLDWIDE!</h2>
 

@@ -10,12 +10,12 @@ const Encabezado = (props) => {
 
         <div className="encabezado">
             <Row className='no-gutters'>
-                <Col md={7}>
+                <Col lg={7}>
                     <div className="encabezado-izq">
                         <img src={props.imgppal} alt="" />
                     </div>
                 </Col>
-                <Col md={5}>
+                <Col lg={5}>
                     <div className="encabezado-der">
                         <div className="box-encabezado-der text-center">
                             <img src={props.img2} alt="" />

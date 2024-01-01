@@ -6,6 +6,7 @@ import './disney.css'
 import Encabezado from "../../components/encabezado/Encabezado";
 import disneyLogo from '../../assets/encabezado/Disney-x-Izzy---Web-Logo.webp'
 import disneyBanner from '../../assets/encabezado/sectionDisney.webp'
+import { Container } from "react-bootstrap";
 
 
 
@@ -25,14 +26,15 @@ const Disney = () => {
 
   return (
     <div className='Disney'>
+      <Container>
       <div className="encabezado-disney">
         <Encabezado imgppal={disneyBanner} img2={disneyLogo} text="SAY HELLO TO DISNEY X IZZY! THIS MAGICAL COLLECTION FEATURES DISNEY'S MUCH-LOVED CHARACTERS. THE RANGE INCLUDES DESIGNS FEATURING THE LIKES OF FAN FAVOURITES, ANNA & ELSA FROM DISNEY'S FROZEN, MICKEY AND MINNIE MOUSE, MARVEL'S SPIDER-MAN, AND STAR WARS!"/>
       </div>
-
+      </Container>
       <div className="my-5  product">
         <ItemList product={disneyProducts} />
       </div>
-
+     
     </div>
   );
 };
