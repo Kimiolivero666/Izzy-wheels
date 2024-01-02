@@ -1,0 +1,69 @@
+  
+
+.help-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 118px;
+}
+
+.bgr{
+    object-fit: cover;
+    width: 100%;
+    background-image: url('../../assets/help/b953.webp');
+}
+
+.img-ultima {
+    object-fit: cover;
+    width: 100%;
+    height: 95vh;
+}
+
+.box-container {
+    background: var(--blanco)
+}
+
+.container-text-help h2 {
+    color: var(--marronOscuro);
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.box-text-help {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box-text-help h4 {
+    color: var(--marronOscuro);
+    font-size: 20px;
+}
+
+.box-text-help p {
+    font-weight: 100;
+    color: var(--grisOscuro);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    line-height: 2rem;
+}
+
+.box-img>img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+
+@media screen and (max-width: 1169px) {
+
+    .container-text-help h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .box-text-help {
+        width: 90%;
+        margin-left: 5%;
+    }
+}

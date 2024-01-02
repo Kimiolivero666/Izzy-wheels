@@ -33,7 +33,7 @@ import techcrunch from '../../assets/home/techcrunch.webp';
 const Home = () => {
   return (
     <div className='Home'>
-      <Jumbotroom/>
+      <Jumbotroom />
       <Container>
         <Row className='mt-5 imagenes-home text-center py-5'>
           <Col lg={2}></Col>
@@ -62,60 +62,60 @@ const Home = () => {
           <WhiteBotton titulo='show now' />
         </div>
       </Container>
-<Container>
-      <section className="section">
-        <Row className='no-gutters justify-content-center'>
-          <Col xs={12} md={6} lg={4} className='text-center section-banner '>
-            <img src={izq} alt="" />
-          </Col>
-          <Col xs={12} md={6} lg={4} className='text-center section-banner-centro ' >
-            <img src={DisneyxIzzy} alt="" />
-            <p>IZZY WHEELS HAS JOINED FORCES</p>
-            <p>WITH DISNEY TO LAUNCH A MAGICAL</p>
-            <p>COLLECTION OF FASHIONABLE WHEEL</p>
-            <p>COVERS FOR WHEELCHAIRS INCLUDING</p>
-            <p>CHARACTERS FROM DISNEY, MARVEL &</p>
-            <p>STAR WARS!</p>
-            <Zoom top>
-              <div className="brown-btn">
-                <BrownBotton titulo='SHOP NOW' />
-              </div>
-            </Zoom>
-          </Col>
-          <Col xs={12} md={6} lg={4} className='text-center section-banner d-none d-lg-block'>
-            <img src={der} alt="" />
-          </Col>
-        </Row>
+      <Container>
+        <section className="section">
+          <Row className='no-gutters justify-content-center'>
+            <Col xs={12} md={6} lg={4} className='text-center section-banner '>
+              <img src={izq} alt="" />
+            </Col>
+            <Col xs={12} md={6} lg={4} className='text-center section-banner-centro ' >
+              <img src={DisneyxIzzy} alt="" />
+              <p>IZZY WHEELS HAS JOINED FORCES</p>
+              <p>WITH DISNEY TO LAUNCH A MAGICAL</p>
+              <p>COLLECTION OF FASHIONABLE WHEEL</p>
+              <p>COVERS FOR WHEELCHAIRS INCLUDING</p>
+              <p>CHARACTERS FROM DISNEY, MARVEL &</p>
+              <p>STAR WARS!</p>
+              <Zoom top>
+                <div className="brown-btn">
+                  <BrownBotton titulo='SHOP NOW' />
+                </div>
+              </Zoom>
+            </Col>
+            <Col xs={12} md={6} lg={4} className='text-center section-banner d-none d-lg-block'>
+              <img src={der} alt="" />
+            </Col>
+          </Row>
         </section>
 
-        </Container>
-      
+      </Container>
+
       <h2 className='text-center titulo-h2-inicio'>WE SHIP WORLDWIDE!</h2>
 
       <Container>
 
-      <section className='section'>
-        <Row className='no-gutters'>
-          <Col xs={12} md={6} lg={4} className='text-center section-banner d-none d-lg-block'>
-            <img src={izquierda} alt="" />
-          </Col>
-          <Col xs={12} md={6} lg={4} className='text-center section-banner-centro-2 ' >
-            <h3>WHO WE ARE</h3>
-            <div>
-              <p >Izzy Wheels was founded by the wonderfully colourful Irish sisters Ailbhe and Izzy. Izzy has been a wheelchair user all of her life. Ailbhe created a range of stylish wheel covers for her sister's chair so that she could express her personality. They now collaborate with artists and fashion designers all over the world to transform wheelchairs into fashion statements. </p>
-            </div>
-            <Zoom top>
-              <div className="brown-btn">
-                <BrownBotton titulo='READ MORE' />
+        <section className='section'>
+          <Row className='no-gutters'>
+            <Col xs={12} md={6} lg={4} className='text-center section-banner d-none d-lg-block'>
+              <img src={izquierda} alt="" />
+            </Col>
+            <Col xs={12} md={6} lg={4} className='text-center section-banner-centro-2 ' >
+              <h3>WHO WE ARE</h3>
+              <div>
+                <p >Izzy Wheels was founded by the wonderfully colourful Irish sisters Ailbhe and Izzy. Izzy has been a wheelchair user all of her life. Ailbhe created a range of stylish wheel covers for her sister's chair so that she could express her personality. They now collaborate with artists and fashion designers all over the world to transform wheelchairs into fashion statements. </p>
               </div>
-            </Zoom>
-          </Col>
-          <Col xs={12} md={6} lg={4} className='text-center section-banner'>
-            <img src={derecha} alt="" />
-          </Col>
-        </Row>
+              <Zoom top>
+                <div className="brown-btn">
+                  <BrownBotton titulo='READ MORE' />
+                </div>
+              </Zoom>
+            </Col>
+            <Col xs={12} md={6} lg={4} className='text-center section-banner'>
+              <img src={derecha} alt="" />
+            </Col>
+          </Row>
 
-      </section>
+        </section>
 
       </Container>
 
