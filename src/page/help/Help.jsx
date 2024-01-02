@@ -4,16 +4,17 @@ import b953 from '../../assets/help/b953.webp'
 import Guide from '../../assets/help/Guide.webp'
 import gte from '../../assets/help/gte.webp'
 import { BrownBotton } from '../../components/brownBotton/BrownBotton'
-import { Col, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 const Help = () => {
     
     return (
         <div className='Help'>
             <div className="help-container">
-                <img src={b953} alt="" />t
+                <img src={b953} alt="" />
                 
                 <div className='box-container'>
+                    <Container>
                     <Row>
                         <Col md={2} className='bgr'></Col>
                         <Col md={8} bg-danger>
@@ -69,6 +70,7 @@ const Help = () => {
                     </Col>
                     <Col md={2} className='bgr'></Col>
                     </Row>
+                    </Container>
                 </div>
             </div>
         </div>
