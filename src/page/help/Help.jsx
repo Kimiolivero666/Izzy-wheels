@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import './Help.css'
+import './help.css'
 import b953 from '../../assets/help/b953.webp'
 import Guide from '../../assets/help/Guide.webp'
 import gte from '../../assets/help/gte.webp'
