@@ -2,7 +2,7 @@ import './work.css'
 import b953 from '../../assets/help/b953.webp'
 import { Col, Container, Form, Row } from 'react-bootstrap'
 import sectionStarWars from '../../assets/encabezado/sectionStarWars.webp.jpg'
-import { useForm } from "react-hook-form"
+import { useForm } from 'react-hook-form';
 
 
 const Work = () => {
