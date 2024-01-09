@@ -17,7 +17,7 @@ const Help = () => {
                     <Container>
                     <Row>
                         <Col md={2} className='bgr'></Col>
-                        <Col md={8} bg-danger>
+                        <Col md={8}>
                     <div className="container-text-help text-center">
                         <h2>FREQUENTLY ASKED QUESTIONS</h2>
                         <div className="box-text-help">

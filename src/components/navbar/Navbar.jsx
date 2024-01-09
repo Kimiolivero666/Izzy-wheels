@@ -61,7 +61,7 @@ const Navbar = () => {
             <Link to={'/marvel'} onClick={scrollToTop} className='link-menu'>MARVEL</Link>
             <Link to={'/starWars'} onClick={scrollToTop} className='link-menu'>STAR WARS</Link>
             <Link to={'/ourStory'} onClick={scrollToTop} className='link-menu'>OUR STORY</Link>
-            <Link to={'/donate'} onClick={scrollToTop} className='link-menu'>DONATE</Link>
+            <Link to={'/work'} onClick={scrollToTop} className='link-menu'>WORK</Link>
             <Link to={'/help'} onClick={scrollToTop} className='link-menu'>HELP</Link>
             </div>           
           </div>

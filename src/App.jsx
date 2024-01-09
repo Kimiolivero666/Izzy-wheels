@@ -11,8 +11,8 @@ import StarWars from './page/StarWars/StarWars'
 import Store from './page/store/Store'
 import Cart from './components/cart/Cart'
 import OurStory from './page/our-story/OurStory'
-import Donate from './page/donate/Donate'
 import Help from './page/help/Help'
+import Work from './page/work/Work'
 
 
 
@@ -37,7 +37,7 @@ function App() {
             <Route path='/marvel' element={<Marvel />} />
             <Route path='/starWars' element={<StarWars />} />
             <Route path='/ourStory' element={<OurStory />} />
-            <Route path='/donate' element={<Donate />} />
+            <Route path='/work' element={<Work />} />
             <Route path='/help' element={<Help/>} />
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
