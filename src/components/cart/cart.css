@@ -1,0 +1,161 @@
+.cart-up img {
+    object-fit: cover;
+    width: 100%;
+    height: 118px;
+}
+
+
+.cart-container {
+    margin-top: 200px;
+}
+
+.cart-container h5 {
+    font-family: 'Glass Antiqua', cursive;
+    font-weight: 800;
+    color: var(--celeste);
+}
+
+.container-cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-hr {
+    border-top: 1.5px solid var(--amarillo);
+    margin: 1rem 0;
+}
+
+.img-cart {
+    width: 100px;
+    height: 100px;
+}
+
+.title-cart {
+    color: var(--marronText);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.precio-unitario {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--marronText);
+    margin-left: 20px;
+}
+
+.precio-total-producto {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--marronText);
+}
+
+.precio-total-producto {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--marronText);
+}
+
+.eliminar-producto {
+    font-size: 20px;
+    color: var(--grisOscuro);
+    margin-top: 5px;
+}
+
+.updateItemQuantity {
+    border: 1px solid var(--grisOscuro);
+    height: 30px;
+}
+
+.updateItemQuantity span {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.updateItemQuantity button {
+    border: none;
+    background: transparent;
+}
+
+.container-cart-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+
+
+
+.precio-total {
+    margin-top: 200px;
+}
+
+.precio-total h5 {
+    font-family: 'Glass Antiqua', cursive;
+    font-weight: 800;
+    color: var(--celeste);
+}
+
+.total-cantidad-box {
+    margin-top: 5rem;
+    margin-bottom: 4.5rem;
+}
+
+.total-pagar-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-pagar {
+    color: var(--marronText);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.precio-total-pagar {
+    color: var(--marronText);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cantidad-producto {
+    color: var(--marronText);
+    font-weight: 300;
+}
+
+.button-checkout {
+    width: 100%;
+    border: none;
+    color: var(--blanco);
+    background: var(--celeste);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.button-checkout:hover {
+    background: var(--celesteHover);
+}
+
+.checkout {
+    margin-bottom: 1rem;
+}
+
+.bag-checkout {
+    display: flex;
+    color: var(--marronText);
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.bag-checkout p {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1412px) {
+    .container-cart {
+        display: flex;
+        flex-direction: column;
+    }
+}

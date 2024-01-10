@@ -43,7 +43,7 @@
     margin-left: 15%;
 }
 
-.form-Name-Email {
+.form-Name {
     display: flex;
     justify-content: space-between;
 }
@@ -51,8 +51,11 @@
 .name{
     width: 48%;
 }
-.email{
+.last-name{
     width: 48%;
+}
+.email{
+    width: 100%;
 }
 .validate{
     width: 100%;

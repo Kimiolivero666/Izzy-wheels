@@ -87,20 +87,28 @@ const Work = () => {
               <div className="form text-center">
                 <h4 className='form-title'>APPLY TODAY!</h4>
                 <Form className='box-form'>
-                  <div className="form-Name-Email">
+                  <div className="form-Name">
                     <p className="name">
                       <input type="text" className="validate feedback-input" placeholder="Name" {...register('name', { required: true })} />
                       {errors.name && <span className='obligatorio'>Este campo es obligatorio</span>}
                     </p>
-                    <p className="email">
-                      <input type="text" className="validate feedback-input" placeholder="Email" {...register('email', { required: true })} />
-                      {errors.email && <span className='obligatorio'>Este campo es obligatorio</span>}
+                    <p className="last-name">
+                      <input type="text" className="validate feedback-input" placeholder="Subjet" {...register('last-name', {
+                        required: true
+                      })} />
+                      {errors['last-name'] && <span className='obligatorio'>Este campo es obligatorio</span>}
                     </p>
+
                   </div>
-                  <p className="last-name">
-                    <input type="text" className="validate feedback-input" placeholder="Subjet" {...register('last-name', { required: true })} />
-                    {errors['last-name'] && <span className='obligatorio'>Este campo es obligatorio</span>}
+
+                  <p className="email">
+                    <input type="text" className="validate feedback-input" placeholder="Email" {...register('email', {
+                      required: true
+                    })} />
+                    {errors.email && <span className='obligatorio'>Este campo es obligatorio</span>}
                   </p>
+
+
                   <p className="text">
                     <textarea className="validate-feedback feedback-input" placeholder="Type your message here..." {...register('comment')}></textarea>
                   </p>

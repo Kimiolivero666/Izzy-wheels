@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './itemCount.css'
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const ItemCount = ({ initial, stock, onAdd }) => {
 
@@ -22,7 +23,16 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 
     const handleAddToCart = () => {
         onAdd(quantity)
+        scrollToTop ()
     }
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' 
+        });
+      };
+
 
 
     return (
@@ -38,7 +48,9 @@ const ItemCount = ({ initial, stock, onAdd }) => {
                 </div>
             </div>
             <div className="btn-onAdd">
-                <button onClick={handleAddToCart} disabled={!stock}>ADD TO CART</button>
+                <Link to={'/cart'}>
+                <button  onClick={handleAddToCart} disabled={!stock}>ADD TO CART</button>
+                </Link>
             </div>
         </div>
     )

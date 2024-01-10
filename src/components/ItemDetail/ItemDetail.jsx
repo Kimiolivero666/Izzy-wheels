@@ -4,12 +4,19 @@ import './itemDetail.css'
 import ItemCount from '../itemCount/ItemCount'
 import Acordion from '../acordeon/Acordion'
 import { useState } from 'react'
+import { useContext } from 'react'
+import { CartContext } from '../context/CartContext'
 
 
 
-const ItemDetail = ({ img, title, price, stock }) => {
+const ItemDetail = ({ img, title, price, stock, id, }) => {
     const [diameter, setDiameter] = useState('');
     const [message, setMessage] = useState('');
+
+    const { addItem } = useContext(CartContext);
+
+
+
   
     const handleDiameterChange = (selectedDiameter) => {
       setDiameter(selectedDiameter);
@@ -26,6 +33,13 @@ const ItemDetail = ({ img, title, price, stock }) => {
       } else {
         window.alert('Por favor, completa el diámetro y el mensaje antes de agregar al carrito.');
       }
+      const item = {
+        id: id,
+        title: title,
+        price: price,
+        img: img
+      };
+      addItem(item, quantity);
     };
   
 

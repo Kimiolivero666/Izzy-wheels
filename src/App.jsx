@@ -13,6 +13,7 @@ import Cart from './components/cart/Cart'
 import OurStory from './page/our-story/OurStory'
 import Help from './page/help/Help'
 import Work from './page/work/Work'
+import CartProvider from './components/context/CartContext'
 
 
 
@@ -29,22 +30,24 @@ function App() {
     <>
 
       <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/Store' element={<Store/>} />
-            <Route path='/disney' element={<Disney />} />
-            <Route path='/marvel' element={<Marvel />} />
-            <Route path='/starWars' element={<StarWars />} />
-            <Route path='/ourStory' element={<OurStory />} />
-            <Route path='/work' element={<Work />} />
-            <Route path='/help' element={<Help/>} />
-            <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path='/item/:itemId' element={<ItemDetailContainer />} />
-            <Route path='/cart' element={<Cart />} />
-            <Route path='*' element={<h1>404 NOT FOUND</h1>} />
-          </Routes>
-        </Layout>
+        <CartProvider>
+          <Layout>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/Store' element={<Store />} />
+              <Route path='/disney' element={<Disney />} />
+              <Route path='/marvel' element={<Marvel />} />
+              <Route path='/starWars' element={<StarWars />} />
+              <Route path='/ourStory' element={<OurStory />} />
+              <Route path='/work' element={<Work />} />
+              <Route path='/help' element={<Help />} />
+              <Route path='/category/:categoryId' element={<ItemListContainer />} />
+              <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+              <Route path='/cart' element={<Cart />} />
+              <Route path='*' element={<h1>404 NOT FOUND</h1>} />
+            </Routes>
+          </Layout>
+        </CartProvider>
       </BrowserRouter>
     </>
   )
